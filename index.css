@@ -9,6 +9,11 @@ body{
 
 main{
   background-color: rgb(219, 223, 226);
+  display: flex;
+  justify-content:flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 50%;
 }
 
 #img{
