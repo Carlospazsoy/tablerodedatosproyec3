@@ -1,3 +1,4 @@
+
 async function cargarDatos() {
     const grafica = document.getElementById("myChart").getContext("2d");
   
@@ -5,18 +6,19 @@ async function cargarDatos() {
     const data = await response.json();
   
     const etiquetas = data.data.map(item => item.nombre.toUpperCase());
-    const ingresosMensuales = data.data.map(item => item.ingresos_mensuales);
+    const ingresosMensuales = data.data.map(item => item.monto);
   
     new Chart(grafica, {
       type: 'bar',
       data: {
         labels: etiquetas,
         datasets: [{
-          label: 'Ingresos Mensuales',
+          label: 'Ingreso Mensual',
           data: ingresosMensuales,
           backgroundColor: 'rgba(75, 192, 192, 0.2)',
           borderColor: 'rgba(75, 192, 192, 1)',
           borderWidth: 1
+
         }]
       },
       options: {
@@ -31,5 +33,3 @@ async function cargarDatos() {
   }
   
   cargarDatos();
-  
-

@@ -1,0 +1,17 @@
+body{
+   background-color: rgba(212, 212, 212, 0.486);
+}
+
+.grafica{
+ width: 700px;
+ height: 700px;
+}
+
+main{
+  background-color: rgb(219, 223, 226);
+}
+
+#img{
+    width: 50px;
+    height: 50px;
+}
