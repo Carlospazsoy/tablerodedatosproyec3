@@ -5,6 +5,8 @@ body{
 .grafica{
  width: 700px;
  height: 700px;
+ margin-top: 150px;
+ margin-right: 150px;
 }
 
 main{
@@ -52,3 +54,4 @@ div li{
 div i{
   margin-right: 10px;
 }
+
