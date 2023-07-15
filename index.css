@@ -12,14 +12,11 @@ body{
   align-items: center;
   flex-direction: column;
   margin-left: 130px;
-  
- 
 }
 
 .grafica{
  width: 700px;
  text-align: center;
- 
 }
 
 .grafica p{
@@ -35,7 +32,6 @@ nav{
   border-radius: 20px;
   cursor: pointer;
   margin-top: 20px;
-  
 }
 
 nav:hover{
@@ -51,7 +47,6 @@ nav:hover{
 
 #caja1{
  display: flex;
- 
 }
 
 #logocc{
@@ -63,7 +58,6 @@ div img{
   margin-left: 30px;
   margin-right: 10px;
   margin-top: 50px;
- 
 }
 
 div p{
@@ -128,6 +122,8 @@ div i{
   .grafica {
     width: 700px;
     height: 700px;
+    padding-bottom: 60px;
   }
+
 }
  
