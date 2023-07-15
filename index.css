@@ -12,7 +12,8 @@ body{
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-left: 60px;
+  margin-left: 130px;
+  margin-bottom: 20px;
   
 }
 
@@ -21,9 +22,7 @@ body{
  height: 700px;
  text-align: center;
  font-size: 30px;
- display: flex;
- flex-direction: column;
- margin-left: 100px;
+ 
 }
 
 nav{
