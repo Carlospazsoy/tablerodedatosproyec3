@@ -32,6 +32,9 @@ export function generarGrafica(grafica, etiquetas, ingresosMensuales) {
                 <td>${usuario.nombre}</td>
                 <td>${usuario.monto}</td>
               </tr>`;
+
+              
       tblFinanzas.innerHTML += tr;
     }
+
   }
