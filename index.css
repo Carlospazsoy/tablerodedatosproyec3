@@ -3,21 +3,35 @@ body{
   font-family: 'Oswald', sans-serif;
 }
 
+#contenedoralfa{
+  display: flex;
+  margin: 20px;
+}
+
+#contenedorg{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 60px;
+  
+}
+
 .grafica{
  width: 700px;
  height: 700px;
- margin-top: 60px;
- margin-right: 150px;
  text-align: center;
- font-size: 40px;
+ font-size: 30px;
+ display: flex;
+ flex-direction: column;
+ margin-left: 100px;
 }
 
-main{
+nav{
   transition:  box-shadow 0.3s ease;
   background-color: rgba(75, 192, 192, 0.137);
   display: flex;
-  justify-content:flex-start;
-  align-items: flex-start;
+  justify-content:space-evenly;
+  align-items: center;
   flex-direction: column;
   width: 20%;
   border-radius: 20px;
@@ -25,7 +39,7 @@ main{
   
 }
 
-main:hover{
+nav:hover{
   box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3) ;
 }
 
@@ -71,4 +85,5 @@ div li:hover{
 div i{
   margin-right: 10px;
 }
+
 
