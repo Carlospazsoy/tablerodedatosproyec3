@@ -24,4 +24,4 @@ Realizado por Claudia Cristina Rojas Salas y Carlos Rabsaces Heredia Paz.
 
 PROPOSITO DEL PROYECTO
 
-Poder demostrar lo aprendido en clases del Ucamp desarrollo web full.
+Poder demostrar lo aprendido en clases del Ucamp desarrollo web full usando fetch, async-await y modulacion con import y expot en javascript.
