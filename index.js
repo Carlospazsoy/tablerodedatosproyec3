@@ -1,17 +1,14 @@
+
 // Función para cargar los datos y generar la gráfica
 async function cargarDatos() {
   const grafica = document.getElementById("myChart").getContext("2d");
-
   const response = await fetch('http://ucamp.alumnos.dev4humans.com.mx/Main/endpoint_ingresos_mensuales');
   const data = await response.json();
-
   const etiquetas = data.data.map(item => item.nombre.toUpperCase());
   const ingresosMensuales = data.data.map(item => item.monto);
-
   generarGrafica(grafica, etiquetas, ingresosMensuales);
   mostrarTabla(data);
 }
-
 // Función para generar la gráfica
 function generarGrafica(grafica, etiquetas, ingresosMensuales) {
   new Chart(grafica, {
@@ -36,12 +33,10 @@ function generarGrafica(grafica, etiquetas, ingresosMensuales) {
     }
   });
 }
-
 // Función para mostrar la tabla de datos
 function mostrarTabla(data) {
   const tblFinanzas = document.getElementById("tblFinanzas");
   tblFinanzas.innerHTML = "";
-
   for (const usuario of data.data) {
     let tr = `<tr>
               <td>${usuario.id}</td>
@@ -51,6 +46,5 @@ function mostrarTabla(data) {
     tblFinanzas.innerHTML += tr;
   }
 }
-
 // Llamada a la función cargarDatos
 cargarDatos();
